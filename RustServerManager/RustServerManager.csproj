@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props" Condition="Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15176FE8-74B6-4D1F-AD85-617269AA338E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RustServerManager</RootNamespace>
+    <AssemblyName>RustServerManager</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>rustservermanagericon_EV8_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Costura, Version=5.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Costura.Fody.5.7.0\lib\netstandard1.0\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAutoMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAutoMessage.Designer.cs">
+      <DependentUpon>AddAutoMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWipeSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWipeSchedule.Designer.cs">
+      <DependentUpon>AddWipeSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAutoMessageEvery1st2nd3rd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAutoMessageEvery1st2nd3rd.Designer.cs">
+      <DependentUpon>AddAutoMessageEvery1st2nd3rd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWipeScheduleEvery1st2nd3rd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWipeScheduleEvery1st2nd3rd.Designer.cs">
+      <DependentUpon>AddWipeScheduleEvery1st2nd3rd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAutoMessageEveryMonthday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAutoMessageEveryMonthday.Designer.cs">
+      <DependentUpon>AddAutoMessageEveryMonthday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWipeScheduleEveryMonthday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWipeScheduleEveryMonthday.Designer.cs">
+      <DependentUpon>AddWipeScheduleEveryMonthday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAutoMessageEveryWeekday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAutoMessageEveryWeekday.Designer.cs">
+      <DependentUpon>AddAutoMessageEveryWeekday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWipeScheduleEveryWeekday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWipeScheduleEveryWeekday.Designer.cs">
+      <DependentUpon>AddWipeScheduleEveryWeekday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAutoMessageEveryXDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAutoMessageEveryXDays.Designer.cs">
+      <DependentUpon>AddAutoMessageEveryXDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWipeScheduleEveryXDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWipeScheduleEveryXDays.Designer.cs">
+      <DependentUpon>AddWipeScheduleEveryXDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugin.cs" />
+    <Compile Include="Packet.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TagsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagsForm.Designer.cs">
+      <DependentUpon>TagsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WipeSchedule.cs" />
+    <Compile Include="MessageSchedule.cs" />
+    <Compile Include="ZipArchiveExtensions.cs" />
+    <EmbeddedResource Include="AddAutoMessage.resx">
+      <DependentUpon>AddAutoMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWipeSchedule.resx">
+      <DependentUpon>AddWipeSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAutoMessageEvery1st2nd3rd.resx">
+      <DependentUpon>AddAutoMessageEvery1st2nd3rd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWipeScheduleEvery1st2nd3rd.resx">
+      <DependentUpon>AddWipeScheduleEvery1st2nd3rd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAutoMessageEveryMonthday.resx">
+      <DependentUpon>AddAutoMessageEveryMonthday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWipeScheduleEveryMonthday.resx">
+      <DependentUpon>AddWipeScheduleEveryMonthday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAutoMessageEveryWeekday.resx">
+      <DependentUpon>AddAutoMessageEveryWeekday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWipeScheduleEveryWeekday.resx">
+      <DependentUpon>AddWipeScheduleEveryWeekday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAutoMessageEveryXDays.resx">
+      <DependentUpon>AddAutoMessageEveryXDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWipeScheduleEveryXDays.resx">
+      <DependentUpon>AddWipeScheduleEveryXDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TagsForm.resx">
+      <DependentUpon>TagsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+    <Content Include="rustservermanagericon_EV8_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Fody.6.5.5\build\Fody.targets" Condition="Exists('..\packages\Fody.6.5.5\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.6.5.5\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.6.5.5\build\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.5.7.0\build\Costura.Fody.props'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets'))" />
+  </Target>
+  <Import Project="..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.5.7.0\build\Costura.Fody.targets')" />
+</Project>

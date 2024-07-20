@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RustServerManager", "RustServerManager\RustServerManager.csproj", "{15176FE8-74B6-4D1F-AD85-617269AA338E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15176FE8-74B6-4D1F-AD85-617269AA338E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15176FE8-74B6-4D1F-AD85-617269AA338E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15176FE8-74B6-4D1F-AD85-617269AA338E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15176FE8-74B6-4D1F-AD85-617269AA338E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {705F55DE-51A6-43AE-B497-89E4EE44F299}
+	EndGlobalSection
+EndGlobal
